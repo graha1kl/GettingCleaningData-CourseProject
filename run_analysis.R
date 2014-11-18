@@ -8,9 +8,6 @@ library(plyr)
 
 # Step 1: Merge the training and test sets to create one data set
 
-# set working directory to location where the dataset was unzipped
-setwd('C:/Users/kgraham13/Desktop/Coursera/CleaningData/Project/UCI HAR Dataset/')
-
 # read in data from test and training files & assign column names to subject and
 # activity tables
 subjectTest <- read.table("test/subject_test.txt", col.names="SubjectID")
