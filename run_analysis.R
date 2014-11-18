@@ -50,12 +50,17 @@ columnNames <- c("SubjectID", "Activity", featuresMeanStd$V2)
 
 # clean feature names
 for (i in 1:length(columnNames)) {
-        columnNames[i] <- gsub("-mean\\(\\)", "_Mean", columnNames[i])
-        columnNames[i] <- gsub("-std\\(\\)", "_StdDev", columnNames[i])
-        columnNames[i] <- gsub("-X", "_X", columnNames[i])
-        columnNames[i] <- gsub("-Y", "_Y", columnNames[i])
-        columnNames[i] <- gsub("-Z", "_Z", columnNames[i])
+        columnNames[i] <- gsub("-mean\\(\\)", "Mean", columnNames[i])
+        columnNames[i] <- gsub("-std\\(\\)", "StdDev", columnNames[i])
+        columnNames[i] <- gsub("-X", "X", columnNames[i])
+        columnNames[i] <- gsub("-Y", "Y", columnNames[i])
+        columnNames[i] <- gsub("-Z", "Z", columnNames[i])
         columnNames[i] <- gsub("BodyBody","Body", columnNames[i])
+        columnNames[i] <- gsub("^(t)", "time", columnNames[i])
+        columnNames[i] <- gsub("^(f)", "freq", columnNames[i])
+        columnNames[i] <- gsub("Gyro", "Gyroscope", columnNames[i])
+        columnNames[i] <- gsub("Acc", "Accelerometer", columnNames[i])
+        columnNames[i] <- gsub("Mag", "Magnitude", columnNames[i])
 }
 
 # apply cleaned names as column headers
