@@ -68,71 +68,73 @@ For columns 3 through 68, variable names are constructed as follows:
 
 ### Complete List of Variable Names:
 
- [1] SubjectID                               
- [2] Activity                                
- [3] timeBodyAccelerometerMeanX              
- [4] timeBodyAccelerometerMeanY            
- [5] timeBodyAccelerometerMeanZ              
- [6] timeBodyAccelerometerStdDevX            
- [7] timeBodyAccelerometerStdDevY            
- [8] timeBodyAccelerometerStdDevZ            
- [9] timeGravityAccelerometerMeanX           
-[10] timeGravityAccelerometerMeanY           
-[11] timeGravityAccelerometerMeanZ          
-[12] timeGravityAccelerometerStdDevX         
-[13] timeGravityAccelerometerStdDevY         
-[14] timeGravityAccelerometerStdDevZ         
-[15] timeBodyAccelerometerJerkMeanX          
-[16] timeBodyAccelerometerJerkMeanY          
-[17] timeBodyAccelerometerJerkMeanZ          
-[18] timeBodyAccelerometerJerkStdDevX        
-[19] timeBodyAccelerometerJerkStdDevY        
-[20] timeBodyAccelerometerJerkStdDevZ        
-[21] timeBodyGyroscopeMeanX                  
-[22] timeBodyGyroscopeMeanY                  
-[23] timeBodyGyroscopeMeanZ                  
-[24] timeBodyGyroscopeStdDevX                
-[25] timeBodyGyroscopeStdDevY                
-[26] timeBodyGyroscopeStdDevZ                
-[27] timeBodyGyroscopeJerkMeanX              
-[28] timeBodyGyroscopeJerkMeanY              
-[29] timeBodyGyroscopeJerkMeanZ             
-[30] timeBodyGyroscopeJerkStdDevX            
-[31] timeBodyGyroscopeJerkStdDevY            
-[32] timeBodyGyroscopeJerkStdDevZ            
-[33] timeBodyAccelerometerMagnitudeMean      
-[34] timeBodyAccelerometerMagnitudeStdDev    
-[35] timeGravityAccelerometerMagnitudeMean   
-[36] timeGravityAccelerometerMagnitudeStdDev
-[37] timeBodyAccelerometerJerkMagnitudeMean
-[38] timeBodyAccelerometerJerkMagnitudeStdDev
-[39] timeBodyGyroscopeMagnitudeMean
-[40] timeBodyGyroscopeMagnitudeStdDev        
-[41] timeBodyGyroscopeJerkMagnitudeMean      
-[42] timeBodyGyroscopeJerkMagnitudeStdDev    
-[43] freqBodyAccelerometerMeanX              
-[44] freqBodyAccelerometerMeanY              
-[45] freqBodyAccelerometerMeanZ              
-[46] freqBodyAccelerometerStdDevX            
-[47] freqBodyAccelerometerStdDevY            
-[48] freqBodyAccelerometerStdDevZ            
-[49] freqBodyAccelerometerJerkMeanX          
-[50] freqBodyAccelerometerJerkMeanY          
-[51] freqBodyAccelerometerJerkMeanZ         
-[52] freqBodyAccelerometerJerkStdDevX        
-[53] freqBodyAccelerometerJerkStdDevY        
-[54] freqBodyAccelerometerJerkStdDevZ        
-[55] freqBodyGyroscopeMeanX                  
-[56] freqBodyGyroscopeMeanY                  
-[57] freqBodyGyroscopeMeanZ                  
-[58] freqBodyGyroscopeStdDevX                
-[59] freqBodyGyroscopeStdDevY                
-[60] freqBodyGyroscopeStdDevZ                
-[61] freqBodyAccelerometerMagnitudeMean      
-[62] freqBodyAccelerometerMagnitudeStdDev   
-[63] freqBodyAccelerometerJerkMagnitudeMean
-[64] freqBodyAccelerometerJerkMagnitudeStdDev
-[65] freqBodyGyroscopeMagnitudeMean
-[66] freqBodyGyroscopeMagnitudeStdDev        
-[67] freqBodyGyroscopeJerkMagnitudeMean      
-[68] freqBodyGyroscopeJerkMagnitudeStdDev  
+```
+ [1] "SubjectID"                               
+ [2] "Activity"                                
+ [3] "timeBodyAccelerometerMeanX"              
+ [4] "timeBodyAccelerometerMeanY"              
+ [5] "timeBodyAccelerometerMeanZ"              
+ [6] "timeBodyAccelerometerStdDevX"            
+ [7] "timeBodyAccelerometerStdDevY"            
+ [8] "timeBodyAccelerometerStdDevZ"            
+ [9] "timeGravityAccelerometerMeanX"           
+[10] "timeGravityAccelerometerMeanY"           
+[11] "timeGravityAccelerometerMeanZ"           
+[12] "timeGravityAccelerometerStdDevX"         
+[13] "timeGravityAccelerometerStdDevY"         
+[14] "timeGravityAccelerometerStdDevZ"         
+[15] "timeBodyAccelerometerJerkMeanX"          
+[16] "timeBodyAccelerometerJerkMeanY"          
+[17] "timeBodyAccelerometerJerkMeanZ"          
+[18] "timeBodyAccelerometerJerkStdDevX"        
+[19] "timeBodyAccelerometerJerkStdDevY"        
+[20] "timeBodyAccelerometerJerkStdDevZ"        
+[21] "timeBodyGyroscopeMeanX"                  
+[22] "timeBodyGyroscopeMeanY"                  
+[23] "timeBodyGyroscopeMeanZ"                  
+[24] "timeBodyGyroscopeStdDevX"                
+[25] "timeBodyGyroscopeStdDevY"                
+[26] "timeBodyGyroscopeStdDevZ"                
+[27] "timeBodyGyroscopeJerkMeanX"              
+[28] "timeBodyGyroscopeJerkMeanY"              
+[29] "timeBodyGyroscopeJerkMeanZ"              
+[30] "timeBodyGyroscopeJerkStdDevX"            
+[31] "timeBodyGyroscopeJerkStdDevY"            
+[32] "timeBodyGyroscopeJerkStdDevZ"            
+[33] "timeBodyAccelerometerMagnitudeMean"      
+[34] "timeBodyAccelerometerMagnitudeStdDev"    
+[35] "timeGravityAccelerometerMagnitudeMean"   
+[36] "timeGravityAccelerometerMagnitudeStdDev"                                         
+[37] "timeBodyAccelerometerJerkMagnitudeMean"  
+[38] "timeBodyAccelerometerJerkMagnitudeStdDev"                                                     
+[39] "timeBodyGyroscopeMagnitudeMean"          
+[40] "timeBodyGyroscopeMagnitudeStdDev"        
+[41] "timeBodyGyroscopeJerkMagnitudeMean"      
+[42] "timeBodyGyroscopeJerkMagnitudeStdDev"    
+[43] "freqBodyAccelerometerMeanX"              
+[44] "freqBodyAccelerometerMeanY"              
+[45] "freqBodyAccelerometerMeanZ"              
+[46] "freqBodyAccelerometerStdDevX"            
+[47] "freqBodyAccelerometerStdDevY"            
+[48] "freqBodyAccelerometerStdDevZ"            
+[49] "freqBodyAccelerometerJerkMeanX"          
+[50] "freqBodyAccelerometerJerkMeanY"          
+[51] "freqBodyAccelerometerJerkMeanZ"          
+[52] "freqBodyAccelerometerJerkStdDevX"        
+[53] "freqBodyAccelerometerJerkStdDevY"        
+[54] "freqBodyAccelerometerJerkStdDevZ"        
+[55] "freqBodyGyroscopeMeanX"                  
+[56] "freqBodyGyroscopeMeanY"                  
+[57] "freqBodyGyroscopeMeanZ"                  
+[58] "freqBodyGyroscopeStdDevX"                
+[59] "freqBodyGyroscopeStdDevY"                
+[60] "freqBodyGyroscopeStdDevZ"                
+[61] "freqBodyAccelerometerMagnitudeMean"      
+[62] "freqBodyAccelerometerMagnitudeStdDev"    
+[63] "freqBodyAccelerometerJerkMagnitudeMean"  
+[64] "freqBodyAccelerometerJerkMagnitudeStdDev"
+[65] "freqBodyGyroscopeMagnitudeMean"          
+[66] "freqBodyGyroscopeMagnitudeStdDev"        
+[67] "freqBodyGyroscopeJerkMagnitudeMean"      
+[68] "freqBodyGyroscopeJerkMagnitudeStdDev"
+```
