@@ -25,10 +25,10 @@ The script makes the following transformations from the original data set:
 3. The ActivityID codes are replaced with the descriptive activity names (`WALKING`, `WALKING_UPSTAIRS`, `WALKING_DOWNSTAIRS`,  `SITTING`, `STANDING`, `LAYING`) contained in the `activity_labels.txt` file.
  
 4. The data set was labeled with descriptive variable names. The "feature variables" were renamed and adhere to the following conventions:
-..* `All lower case when possible` - because the variable names would be unreadable if converted to all lower case, `camlCase` was used as an alternative as is acceptable according to [Google's R Style Guide](http://google-styleguide.googlecode.com/svn/trunk/Rguide.xml).
-..* `Descriptive (Diagnosis versus Dx)` - all abreviations (with the acceptions of `StdDev` used for standard deviation and `freq` used for frequency) were converted to full words (i.e. t="Time", Gyro="Gyroscope", Acc="Accelerometer", and Mag="Magnitude).
-..* `Not duplicated` - duplicates were not present in the subset of feature variables, so not transformations were required to comply with this rule.
-..* `Not have underscores or dots or white spaces` - dashes and parentheses are removed from the feature variable names.
+  * `All lower case when possible` - because the variable names would be unreadable if converted to all lower case, `camlCase` was used as an alternative as is acceptable according to [Google's R Style Guide](http://google-styleguide.googlecode.com/svn/trunk/Rguide.xml).
+  * `Descriptive (Diagnosis versus Dx)` - all abreviations (with the acceptions of `StdDev` used for standard deviation and `freq` used for frequency) were converted to full words (i.e. t="Time", Gyro="Gyroscope", Acc="Accelerometer", and Mag="Magnitude).
+  * `Not duplicated` - duplicates were not present in the subset of feature variables, so not transformations were required to comply with this rule.
+  * `Not have underscores or dots or white spaces` - dashes and parentheses are removed from the feature variable names.
 
 5. An independent tidy data set is created that calculates the average of each variable for each subject and each activity. This is accomplished using the ddply function from the plyr package which is required in order to successfully run the `run_analysis.R` script.
 
