@@ -66,7 +66,7 @@ For columns 3 through 68, variable names are constructed as follows:
 
 `Axis` denotes the axis of movement on which the measurement was taken. This variable name component may or may not be present. Values are `X`, `Y`, or `Z`.
 
-*** Complete List of Variable Names:
+### Complete List of Variable Names:
 
  [1] SubjectID                               
  [2] Activity                                
@@ -104,9 +104,9 @@ For columns 3 through 68, variable names are constructed as follows:
 [34] timeBodyAccelerometerMagnitudeStdDev    
 [35] timeGravityAccelerometerMagnitudeMean   
 [36] timeGravityAccelerometerMagnitudeStdDev
-[37] timeBodyAccelerometerJerkMagnitudeMean 
+[37] timeBodyAccelerometerJerkMagnitudeMean
 [38] timeBodyAccelerometerJerkMagnitudeStdDev
-[39] timeBodyGyroscopeMagnitudeMean          
+[39] timeBodyGyroscopeMagnitudeMean
 [40] timeBodyGyroscopeMagnitudeStdDev        
 [41] timeBodyGyroscopeJerkMagnitudeMean      
 [42] timeBodyGyroscopeJerkMagnitudeStdDev    
@@ -130,9 +130,9 @@ For columns 3 through 68, variable names are constructed as follows:
 [60] freqBodyGyroscopeStdDevZ                
 [61] freqBodyAccelerometerMagnitudeMean      
 [62] freqBodyAccelerometerMagnitudeStdDev   
-[63] freqBodyAccelerometerJerkMagnitudeMean  
+[63] freqBodyAccelerometerJerkMagnitudeMean
 [64] freqBodyAccelerometerJerkMagnitudeStdDev
-[65] freqBodyGyroscopeMagnitudeMean         
+[65] freqBodyGyroscopeMagnitudeMean
 [66] freqBodyGyroscopeMagnitudeStdDev        
 [67] freqBodyGyroscopeJerkMagnitudeMean      
 [68] freqBodyGyroscopeJerkMagnitudeStdDev  
