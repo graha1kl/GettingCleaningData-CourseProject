@@ -2,11 +2,7 @@
 
 ## Original Data
 
-The original data used to generate `tidyDataAverages.txt` was obtained from the UCI Machine Learning Repository and contains data "from the recordings of 30 subjects 
-
-performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors" (http://archive.ics.uci.edu/ml/datasets/Human+Activity
-
-+Recognition+Using+Smartphones).
+The original data used to generate `tidyDataAverages.txt` was obtained from the UCI Machine Learning Repository and contains data "from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors" (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
 The original data can be obtained from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
 
@@ -35,3 +31,35 @@ The script makes the following transformations from the original data set:
 Please refer to the inline documentation included in `run_analysis.R` for detailed comments describing each step in the transformation.
 
 ## Variables
+
+The `tidyDataAverages.txt` data file uses the following variables:
+
+* **Column 1:** SubjectID
+  * A unique identifier assigned to each subject
+  * Values: integers 1 to 30
+
+* **Column 2:** Activity
+  * A character variable identifying the type of activity measured.
+  * Values: `WALKING`, `WALKING_UPSTAIRS`, `WALKING_DOWNSTAIRS`,  `SITTING`, `STANDING`, `LAYING`
+
+* **Columns 3-68:** Feature Variables (see naming conventions below)
+  * A numerical variable measuring either the average mean or standard deviation by subject and activity
+  * Values: numerical value of either a) average mean or b) average standard deviation
+
+For columns 3 through 68, variable names are constructed as follows:
+
+```<measurement><Signal><Source><Jerk><Magnitude><Type><Axis>```
+
+`measurement` denotes the type of measurement domain signal. Values are `time` or `freq` (frequency).
+
+`Signal` denotes the acceleration signal. Values are `Body` or `Gravity`.
+
+`Source` denotes the measurement source. Values are `Accelerometer` or `Gyroscope`.
+
+`Jerk` is included in variable name only if jerk signals were derived. This variable name component may or may not be present. Value is `Jerk`.
+
+`Magnitude` is included only in variable names where magnitude was calculated. This variable name component may or may not be present. Value is `Magnitude`.
+
+`Type` denotes the type of variable estimated from the measured signals. Values are `Mean` or `StdDev` (standard deviation).
+
+`Axis` denotes the axis of movement on which the measurement was taken. This variable name component may or may not be present. Values are `X`, `Y`, or `Z`.
