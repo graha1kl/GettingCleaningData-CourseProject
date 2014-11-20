@@ -66,7 +66,7 @@ For columns 3 through 68, variable names are constructed as follows:
 
 `Axis` denotes the axis of movement on which the measurement was taken. This variable name component may or may not be present. Values are `X`, `Y`, or `Z`.
 
-### Complete List of Variable Names:
+### Complete List of Descriptive Variable Names:
 
 ```
  [1] "SubjectID"                               
