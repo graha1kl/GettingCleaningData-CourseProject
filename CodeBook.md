@@ -40,7 +40,7 @@ The `tidyDataAverages.txt` data file uses the following variables:
 
 **Column 2:** Activity
 * A character variable identifying the type of activity measured.
-* Values: LAYING`, `SITTING`, `STANDING`, `WALKING`, `WALKING_DOWNSTAIRS`, `WALKING_UPSTAIRS`
+* Values: `LAYING`, `SITTING`, `STANDING`, `WALKING`, `WALKING_DOWNSTAIRS`, `WALKING_UPSTAIRS`
 
 **Columns 3-68:** Feature Variables (see naming conventions below)
 * A numerical variable measuring either the average mean or standard deviation by subject and activity
