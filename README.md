@@ -13,7 +13,7 @@ This repository contains the R code and documentation files for the course proje
 
 `run_analysis.R` - Contains R code that is designed to manipulate the original data set from the [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and produce a tidy data set (`tidyDataAverages.txt`) for later analysis.
 
-## Requirements
+## Requirements & Instructions
 
 1. Download and unzip the [project data set](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). The data files will unzip into the following folder: `UCI_HAR_Dataset`. Do not rename or move any of the files within this folder.
 
@@ -22,3 +22,11 @@ This repository contains the R code and documentation files for the course proje
 3. Set `UCI_HAR_Dataset` as your working directory in you R environment.
 
 4. The `run_analysis.R` script requires the `plyr` package. If not already installed, do so prior to running the script (`install.packages("plyr")`
+
+5. Source the script from within the working directory: `source('run_analysis.R')`
+ 
+6. The code will write the `tidyDataAverages.txt` file to the `UCI_Har_Dataset` directory. To view the resulting data set in R execute these commands:
+```
+data <- read.table("tidyDataAverages.txt", header=TRUE)
+View(data)
+```
