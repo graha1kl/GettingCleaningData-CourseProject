@@ -18,7 +18,7 @@ The script makes the following transformations from the original data set:
 
 2. The combined data set is subset to retain only the columns that measure mean or standard deviation. This is accomplished by using a regular expression to identify the variables in the `features.txt` file that contain either `-mean()` or `-std()` in their names and using the results to subset the merged data frame. The resulting data set includes 66 "feature variables", (along with two additional columns containing the subject and activity ID codes).
  
-3. The ActivityID codes are replaced with the descriptive activity names (`WALKING`, `WALKING_UPSTAIRS`, `WALKING_DOWNSTAIRS`,  `SITTING`, `STANDING`, `LAYING`) contained in the `activity_labels.txt` file.
+3. The ActivityID codes are replaced with the descriptive activity names (`LAYING`, `SITTING`, `STANDING`, `WALKING`, `WALKING_DOWNSTAIRS`, `WALKING_UPSTAIRS`) contained in the `activity_labels.txt` file.
  
 4. The data set is labeled with descriptive variable names. The "feature variables" are renamed to adhere to the following conventions:
   * `All lower case when possible` - because the variable names would be unreadable if converted to all lower case, `camlCase` is used as an alternative as is acceptable according to [Google's R Style Guide](http://google-styleguide.googlecode.com/svn/trunk/Rguide.xml).
@@ -40,7 +40,7 @@ The `tidyDataAverages.txt` data file uses the following variables:
 
 **Column 2:** Activity
 * A character variable identifying the type of activity measured.
-* Values: `WALKING`, `WALKING_UPSTAIRS`, `WALKING_DOWNSTAIRS`,  `SITTING`, `STANDING`, `LAYING`
+* Values: LAYING`, `SITTING`, `STANDING`, `WALKING`, `WALKING_DOWNSTAIRS`, `WALKING_UPSTAIRS`
 
 **Columns 3-68:** Feature Variables (see naming conventions below)
 * A numerical variable measuring either the average mean or standard deviation by subject and activity
